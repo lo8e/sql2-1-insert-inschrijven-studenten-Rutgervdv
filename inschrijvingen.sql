@@ -26,3 +26,8 @@ VALUES
 UPDATE studenten
 SET geboortedatum = "2002-01-27"
 WHERE ov_nummer = '90002';
+
+# werkt niet door saf mode.
+UPDATE studenten
+SET actief = false
+WHERE inschrijvings_datum <= "1-1-2017";
